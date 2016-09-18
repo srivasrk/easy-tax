@@ -8,8 +8,8 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  smImageUrl: string = 'app/images/saurabhM.jpg';
-  rsImageUrl: string = 'app/images/rahulS.jpg';
+  smImageUrl: string = '/app/images/saurabhM.jpg';
+  rsImageUrl: string = '/app/images/rahulS.jpg';
 
   constructor() { }
 
