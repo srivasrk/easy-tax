@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <et-testimonial-item *ngFor="let tml of testimonials; let i = index" [tml-item]="tml"
+                           [tml-item-id]="i" (currentTmlChanged)="activeTmlIdChanged($event)"></et-testimonial-item>
+    </ul>
+    <h3> ... and many more</h3>
+    <div class="row-margin">
+      <a [routerLink]=activeTmlId (click)="previousTestimonial()" class="btn btn-success" type="button">Previous</a>
+      <a [routerLink]=activeTmlId  (click)="nextTestimonial()" class="btn btn-success" type="button">Next</a>
+    </div>
+  </div>
+</div>
+

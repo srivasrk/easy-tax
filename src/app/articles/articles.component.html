@@ -1,0 +1,15 @@
+
+<!--<div class="col-md-9">-->
+
+<div class="col-md-12" *ngIf="testBool" >
+  <router-outlet></router-outlet>
+</div>
+
+<div class="col-md-9">
+  <app-articles-list [articles]="articles" ></app-articles-list>
+</div>
+<!--<div class="col-md-3">-->
+<div class="col-md-3">
+  <app-articles-side-bar [articles]="articles"></app-articles-side-bar>
+</div>
+

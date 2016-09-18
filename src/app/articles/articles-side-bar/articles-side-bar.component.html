@@ -1,0 +1,13 @@
+<div class="row-margin">
+  <p class="lead">Complete list of articles</p>
+</div>
+
+
+<ul class="list-group">
+  <hr class="featurette-divider">
+  <div *ngFor="let art of articles; let i = index">
+    <app-article-detail [selectedArticle]="art"[selectedArticleId]="i" [displaytext]="art.title">
+    </app-article-detail>
+  </div>
+
+</ul>

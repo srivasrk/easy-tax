@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "genDir": "./ngfactory",
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,

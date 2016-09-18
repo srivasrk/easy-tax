@@ -1,0 +1,34 @@
+<div class="list-group-item clearfix">
+
+    <div class="col-md-8">
+      <h3>{{articleItem?.title}}</h3>
+      <h4 class="list-group-item-text"><small>Submitted by: {{articleItem?.author}}</small></h4>
+    </div>
+    <div class="social col-md-4">
+      <a href={{twitterShareUrl}}
+         onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false">
+        <i class="fa fa-sm fa-twitter"></i>
+      </a>
+      <a href={{facebookShareUrl}}
+         onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false">
+          <i class="fa fa-sm fa-facebook"></i>
+      </a>
+    </div>
+
+
+    <div class="col-md-10">
+      {{articleItem?.contentPreview}}
+      <div class="w3-section">
+        <app-article-detail [selectedArticle]="getArticleFromId(articleId)" [selectedArticleId]="articleId">
+        </app-article-detail>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <img class="img-responsive well-sm"  alt="Avatar" src="{{articleItem?.imagePath}}"/>
+    </div>
+</div>
+
+
+
+

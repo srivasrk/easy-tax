@@ -1,0 +1,14 @@
+
+  <div class="container row-margin">
+    <input type="text" #searchKey >
+    <button class="btn btn-primary" (click)="0" >Search</button>
+    <button type="button" class="btn btn-primary glyphicon glyphicon-circle-arrow-left"
+            (click)="searchKey.value=''"  data-toggle="tooltip" data-placement="bottom" title="Exit Search"></button>
+  </div>
+
+  <ul class="list-group">
+    <hr class="featurette-divider">
+      <app-article-item *ngFor="let art of articles | articleSearch:searchKey.value; let i = index" [art-item]="art"[art-item-id]="i">
+      </app-article-item>
+  </ul>
+

@@ -1,0 +1,11 @@
+<a [routerLink]="[testimonialId]" class="list-group-item clearfix" routerLinkActive="active" (click)="onTmlClick()">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{testimonial.name}}</h4>
+    <p class="list-group-item-text">{{testimonial.customerName}}</p>
+  </div>
+  <span class="pull-right">
+      <img class="img-responsive"
+           src="{{testimonial.imagePath}}"
+           style="max-height: 50px;"/>
+  </span>
+</a>

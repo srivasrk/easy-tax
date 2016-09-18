@@ -1,0 +1,23 @@
+<div id="articleDetail{{selectedArticleId}}" class="modal fade" role="dialog" (click)="0">
+  <div class="modal-dialog custom-class">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">{{selectedArticle?.title}}</h4>
+      </div>
+      <div class="modal-body">
+        <p>{{selectedArticle?.content}}</p>
+        <img src={{selectedArticle?.imagePath}} class="img-responsive center-block">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<button class="btn customBtn" data-toggle="modal" attr.data-target="#articleDetail{{selectedArticleId}}">
+  {{displaytext}}
+  <!--<span class="glyphicon glyphicon-option-horizontal"></span>-->
+</button>

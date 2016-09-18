@@ -1,0 +1,53 @@
+html, body{
+  height: 100%;
+}
+
+body {
+  min-height:100%;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background: #ffffff; /* For browsers that do not support gradients */
+  /*background: -webkit-linear-gradient(white, white, #eefffe, #dcfeff); !* For Safari 5.1 to 6.0 *!*/
+  /*background: -o-linear-gradient(white, white, #eefffe, #dcfeff); !* For Opera 11.1 to 12.0 *!*/
+  /*background: -moz-linear-gradient(white, white, #eefffe, #dcfeff); !* For Firefox 3.6 to 15 *!*/
+  /*background: linear-gradient(white, white, #eefffe, #dcfeff); !* Standard syntax (must be last) *!*/
+  /*background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dcfeff)) fixed;*/
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+
+.footer {
+  position: relative;
+  margin-top: -75px; /* negative value of footer height */
+  height: 100px;
+  clear:both;
+  padding-top:20px;
+}
+
+.well-sm {
+  background-color: rgba(65, 137, 206, 0.9);
+}
+
+.well {
+  background-color: rgba(220, 254, 255, 0.9);
+  /*rgb and opacity. rgb same as body background color defined above*/
+}
+
+.row-margin {
+  margin-top:5px;
+  margin-bottom:25px;}
+
+
+.list-group-item{
+  background-color: rgba(65, 137, 206, 0.3);
+  border-bottom-color: yellow;
+}

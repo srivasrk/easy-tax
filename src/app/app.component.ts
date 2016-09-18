@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
+// import { HeaderComponent } from "./header/header.component";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'et-root',
+  templateUrl: 'app.component.html',
+  styleUrls: ['css/global.css']
+  // directives: [ HeaderComponent ]
 })
 export class AppComponent {
-  title = 'app works!';
+  appBgPhoto : string  = 'https://www.betterment.com/wp-content/uploads/2013/04/piggybank.jpg';
 }
