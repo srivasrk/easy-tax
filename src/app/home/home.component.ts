@@ -20,9 +20,9 @@ import 'rxjs/Rx';
 export class HomeComponent implements OnInit{
 
   featurettes: HomeFeaturette[] = [];
-  carouselImage1: string = 'app/images/carousel1.jpg';
-  carouselImage2: string = 'app/images/carousel2.jpg';
-  carouselImage3: string = 'app/images/carousel3.jpg';
+  carouselImage1: string = '/app/images/carousel1.jpg';
+  carouselImage2: string = '/app/images/carousel2.jpg';
+  carouselImage3: string = '/app/images/carousel3.jpg';
 
 
 
