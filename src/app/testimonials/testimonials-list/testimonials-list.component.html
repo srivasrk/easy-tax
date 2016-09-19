@@ -5,9 +5,10 @@
                            [tml-item-id]="i" (currentTmlChanged)="activeTmlIdChanged($event)"></et-testimonial-item>
     </ul>
     <h3> ... and many more</h3>
-    <div class="row-margin">
-      <a [routerLink]=activeTmlId (click)="previousTestimonial()" class="btn btn-success" type="button">Previous</a>
-      <a [routerLink]=activeTmlId  (click)="nextTestimonial()" class="btn btn-success" type="button">Next</a>
+    <div class="row-margin"
+         *ngIf="testimonials.length > 2">
+      <a [routerLink]=previousTmlId (click)="previousTestimonial()" class="btn btn-success" type="button">Previous</a>
+      <a [routerLink]=nextTmlId  (click)="nextTestimonial()" class="btn btn-success" type="button">Next</a>
     </div>
   </div>
 </div>

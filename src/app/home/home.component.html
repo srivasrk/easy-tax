@@ -52,11 +52,14 @@
 
 <div class="marketing container text-justify">
 
-  <div class="row">
+  <div class="row clearfix">
     <div class="col-lg-3 well" *ngFor="let ftr of featurettes">
+
       <img class="img-circle" src={{ftr.imagePath}} alt="Generic placeholder image"height="140">
+
       <h2 class="featurette-heading">{{ftr.title}}</h2>
       <p>{{ftr.content}}</p>
+
       <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
     </div><!-- /.col-lg-4 -->
   </div><!-- /.row -->
