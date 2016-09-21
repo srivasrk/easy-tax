@@ -16,6 +16,7 @@ export class ArticleDetailPageComponent implements OnInit {
 
   selectedArticle: Article;
   private articleIndex: number = 0;
+  private numberOfArticles: number = 0;
   private subscriptionRoute: Subscription;
   private subscriptionSelectedArticle: Subscription;
 
@@ -26,13 +27,13 @@ export class ArticleDetailPageComponent implements OnInit {
   { }
 
   ngOnInit() {
-    console.log('detail init');
     this.subscriptionRoute = this.route.params.subscribe(
       (params: any) => {
         this.articleIndex = params['id'];
         this.subscriptionSelectedArticle = this.articleService.articlesChanged.subscribe(
           (params: any) => {
             this.selectedArticle = this.articleService.getArticle(this.articleIndex);
+            this.numberOfArticles = this.articleService.getNumberOfArticles();
           }
         );
       }
@@ -42,6 +43,25 @@ export class ArticleDetailPageComponent implements OnInit {
   ngOnDestroy() {
     this.subscriptionRoute.unsubscribe();
     this.subscriptionSelectedArticle.unsubscribe();
+  }
 
+  nextArticle() {
+    if (this.articleIndex >= this.numberOfArticles - 1) {
+      this.articleIndex = 0;
+    }
+    else{
+      this.articleIndex++;
+    }
+    this.selectedArticle = this.articleService.getArticle(this.articleIndex);
+  }
+
+  previousArticle() {
+    if (this.articleIndex <= 0) {
+      this.articleIndex = this.numberOfArticles - 1;
+    }
+    else{
+      this.articleIndex--;
+    }
+    this.selectedArticle = this.articleService.getArticle(this.articleIndex);
   }
 }

@@ -15,6 +15,10 @@ export class ArticleService {
     return this.articles;
   }
 
+  getNumberOfArticles(){
+    return this.articles.length;
+  }
+
   getArticle(id: number){
     if (id < 0){
       return null;

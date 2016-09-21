@@ -1,5 +1,8 @@
 <!-- Modal content-->
 <div class="well-lg">
+  <a (click)="previousArticle()" class="btn btn-success" type="button">Previous</a>
+  <a (click)="nextArticle()" class="btn btn-success" type="button">Next</a>
+
   <div class="modal-header">
     <h4 class="modal-title">{{selectedArticle?.title}}</h4>
   </div>
@@ -8,4 +11,5 @@
     <img src={{selectedArticle?.imagePath}} class="img-responsive center-block">
   </div>
 </div>
+<hr>
 

@@ -2,9 +2,7 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'et-about',
-  templateUrl: 'about.component.html',
-  styleUrls: ['about.component.css'],
-  encapsulation: ViewEncapsulation.None
+  templateUrl: 'about.component.html'
 })
 export class AboutComponent implements OnInit {
 
