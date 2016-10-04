@@ -12,7 +12,8 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeService } from "./home/home.service";
-
+import { AgmCoreModule } from "angular2-google-maps/core";
+import {Ng2PageScrollModule} from "ng2-page-scroll/src/ng2-page-scroll.module";
 
 
 @NgModule({
@@ -22,7 +23,7 @@ import { HomeService } from "./home/home.service";
     HomeComponent,
     ContactComponent,
     AboutComponent,
-    FooterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +31,10 @@ import { HomeService } from "./home/home.service";
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
+    Ng2PageScrollModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyALmgl4ViP72v3sQwdF8_Bcaigdl8uxISg'
+    }),
     routing
   ],
   providers: [

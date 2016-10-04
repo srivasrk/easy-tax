@@ -3,9 +3,9 @@ import { ArticleDetailPageComponent } from "./article-detail-page/article-detail
 import { ArticlesComponent } from "./articles.component";
 
 export const ARTICLE_ROUTES: Routes = [
-  { path: '', component: ArticlesComponent, children: [
-    { path: '', component: ArticlesComponent,  pathMatch: 'full' },
-    { path: ':id', component: ArticleDetailPageComponent, pathMatch: 'full' }
+   { path: '', component: ArticlesComponent, children: [
+       { path: '', component: ArticlesComponent,  pathMatch: 'full' },
+     { path: ':id', component: ArticleDetailPageComponent, pathMatch: 'full' }
   ]}
 ];
 

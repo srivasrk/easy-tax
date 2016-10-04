@@ -24,6 +24,10 @@ export class HomeComponent implements OnInit{
   carouselImage2: string = '/app/images/carousel2.jpg';
   carouselImage3: string = '/app/images/carousel3.jpg';
 
+  iconImg1: string = '/app/images/step1-icon.png';
+  iconImg2: string = '/app/images/step2-icon.png';
+  iconImg3: string = '/app/images/step3-icon.png';
+
 
 
   constructor(private homeService: HomeService) {}

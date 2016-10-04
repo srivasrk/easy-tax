@@ -4,10 +4,8 @@ html, body{
 
 body {
   min-height:100%;
-
   background-repeat: no-repeat;
   background-attachment: fixed;
-
   background: #ffffff; /* For browsers that do not support gradients */
   /*background: -webkit-linear-gradient(white, white, #eefffe, #dcfeff); !* For Safari 5.1 to 6.0 *!*/
   /*background: -o-linear-gradient(white, white, #eefffe, #dcfeff); !* For Opera 11.1 to 12.0 *!*/
@@ -17,6 +15,7 @@ body {
 }
 
 #wrap {
+  padding-top: 60px;
   min-height: 100%;
 }
 

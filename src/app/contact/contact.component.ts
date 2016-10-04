@@ -1,11 +1,17 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { FormGroup, FormControl, Validators } from "@angular/forms";
 
+declare var google: any;
 @Component({
   selector: 'et-contact',
-  templateUrl: './contact.component.html'
+  templateUrl: './contact.component.html',
+  styleUrls: ['contact.component.css']
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit{
+  latitude: number = 25.750813;
+  longitude: number = 84.147424;
+  zoomLevel = 17;
+
   contactForm: FormGroup;
 
   typeOfEnquiry = ['Individual', 'Company', 'Other'];
@@ -19,6 +25,8 @@ export class ContactComponent {
     });
   }
 
+  ngOnInit(){
+  }
 
   onSubmit() {
     console.log(this.contactForm);
