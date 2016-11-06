@@ -11,6 +11,7 @@ import { ArticleSearchPipe } from "./article-pipe";
 import { ArticlesSideBarComponent } from './articles-side-bar/articles-side-bar.component';
 import { ArticleDetailPageComponent } from './article-detail-page/article-detail-page.component';
 import { articlesRouting } from "./articles.routes";
+import { ArticleEmptyComponent } from './article-empty/article-empty.component';
 
 @NgModule({
     declarations: [
@@ -20,7 +21,7 @@ import { articlesRouting } from "./articles.routes";
         ArticleDetailComponent,
         ArticleSearchPipe,
         ArticlesSideBarComponent,
-        ArticleDetailPageComponent
+        ArticleDetailPageComponent, ArticleEmptyComponent
     ],
     imports:[
         CommonModule,

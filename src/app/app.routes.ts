@@ -13,7 +13,7 @@ const APP_ROUTES: Routes= [
   { path: '', redirectTo: 'et-home', pathMatch: 'full'},
   { path: 'home', component: HomeComponent},
   { path: 'about', component: AboutComponent},
-  // { path: 'articles', component: ArticlesComponent, pathMatch: 'full'},
+  // { path: 'articles', component: ArticlesComponent},
   // { path: 'articles', component: ArticlesComponent, children: ARTICLE_ROUTES },
   { path: 'contact', component: ContactComponent},
   { path: 'products', loadChildren: "./app/products/products.module"},

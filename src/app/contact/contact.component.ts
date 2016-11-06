@@ -10,7 +10,7 @@ declare var google: any;
 export class ContactComponent implements OnInit{
   latitude: number = 25.750813;
   longitude: number = 84.147424;
-  zoomLevel = 17;
+  zoomLevel = 10;
 
   contactForm: FormGroup;
 

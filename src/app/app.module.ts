@@ -13,7 +13,8 @@ import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeService } from "./home/home.service";
 import { AgmCoreModule } from "angular2-google-maps/core";
-import {Ng2PageScrollModule} from "ng2-page-scroll/src/ng2-page-scroll.module";
+import { Ng2PageScrollModule } from "ng2-page-scroll/src/ng2-page-scroll.module";
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import {Ng2PageScrollModule} from "ng2-page-scroll/src/ng2-page-scroll.module";
     FormsModule,
     ReactiveFormsModule,
     Ng2PageScrollModule,
+    NgbModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyALmgl4ViP72v3sQwdF8_Bcaigdl8uxISg'
     }),
