@@ -1,10 +1,7 @@
-#easy-tax
-
-Angular 2 project with bootstrap to enhance a small-town tax filing business. This is to help a friend's business which has limited/no online presence. The idea is to advertise and provide a gateway for the business.
-
 # EasyTax
 
-[Easy Tax Solutions](https://srivasrk.github.io/)
+Angular 2 project with bootstrap to enhance a small-town tax filing business. This is to help a friend's business which has limited/no online presence. The idea is to advertise and provide a gateway for the business.
+Click here: [Easy Tax Solutions](https://srivasrk.github.io/)
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
